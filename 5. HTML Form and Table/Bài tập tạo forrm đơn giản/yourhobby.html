@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="yourhobby.css">
+</head>
+<body>
+  <div class="myhobby">
+    <form class="myhobby-form" action="" method="post">
+      <table >
+        <caption>SỞ THÍCH CỦA BẠN</caption>
+        <tr>
+          <th> Họ và tên:</th>
+          <td colspan="2"> <input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <th> Email:</th>
+          <td colspan="2"> <input type="email" required name="email"> </td>
+        </tr>
+        <tr>
+          <th rowspan="4"> Sở thích:</th>
+          <td> <label for=""> <input type="checkbox" name="hobby"> Thể thao</label> </td>
+          <td> <label for=""> <input type="checkbox" name="hobby"> Âm nhạc</label> </td>
+          <td> <label for=""> <input type="checkbox" name="hobby"> Đọc sách</label> </td>
+        </tr>
+        <tr>
+          <td> <label for=""> <input type="checkbox" name="hobby"> Lướt web</label> </td>
+          <td> <label for=""> <input type="checkbox" name="hobby"> Chơi game</label> </td>
+          <td> <label for=""> <input type="checkbox" name="hobby"> Điện ảnh</label></td>
+        </tr>
+        <tr>
+          <td> <label for=""> <input class="checkbox" type="checkbox" name="hobby"> Du lịch</label> </td>
+        </tr>
+        <tr>
+          <td colspan="2"> <input type="submit" name="submit" value="Gửi thông tin"> <input type="reset" name="reset" value="Nhập lại"> </td>
+        </tr>
+      </table>
+  </div>
+</body>
+</html>

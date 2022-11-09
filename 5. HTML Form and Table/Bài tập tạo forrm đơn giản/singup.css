@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 4px;
+  box-sizing: border-box;
+}
+
+div {
+  background-color: #FFFF66;
+  padding: 16px;
+  width: 400px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  background-color: #99FFFF;
+  color: #3366CC;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 4px;
+  font-size: 16px;
+}
+
+th {
+  color: #0033CC;
+  text-align: left;
+  vertical-align: text-top;
+}
+
+td {
+  box-shadow: 2px inset #ccc;
+}
+
+input,
+textarea {
+  border: inset 2px #CCC;
+}
