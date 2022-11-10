@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  document.write('Bài 1');
+  document.write('<br>');
+  physics = prompt('nhập điểm vật lý');
+  chemistry = prompt('nhập điểm hóa học');
+  biological = prompt('nhập điểm sinh học');
+  let phy = parseInt(physics);
+  let chem = parseInt(chemistry);
+  let bio = parseInt(biological);
+  let Sum = phy + chem + bio;
+  let Avg = Sum / 3;
+  document.write('Tổng điểm:' + Sum);
+  document.write('<br>');
+  document.write('Điểm trung bình:' + Avg);
+  
+  document.write('<br>');
+  document.write('<br>');
+  document.write('Bài 2');
+  inputC = prompt('nhập nhiệt độ oC');
+  let tempC = parseInt(inputC);
+  let F = tempC *9/5 +32;
+  document.write('<br>');
+  document.write('Nhiệt độ o F:' + ' ' + F);
+
+  document.write('<br>');
+  document.write('<br>');
+  document.write('Bài 3 + 4');
+  inputR = prompt('nhập bán kính')
+  let R = parseInt(inputR);
+  let S = R*R*3.14;
+  let C = R*2*3.14;
+  document.write('<br>');
+  document.write('Chu vi hình tròn là:' + ' ' + C);
+  document.write('<br>');
+  document.write('Diện tích hình tròn là:' + ' ' + S);
+  </script>
+  
+
+</body>
+</html>
