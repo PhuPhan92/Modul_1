@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caculator</title>
+</head>
+<body>
+  <h3>CACULATOR</h3>
+  <table>
+    <tr>
+      <td colspan="2"> <input type="text" id="numberA" value="1"> </td>
+      <td colspan="2"> <input type="text" id="numberB" value="1"> </td>
+    </tr>
+    <tr>
+      <td><input type="button" value="Add(+)" onclick="add()"></td>
+      <td><input type="button" value="Sub(-)" onclick="sub()"></td>
+      <td><input type="button" value="Multi(*)" onclick="multi()"></td>
+      <td><input type="button" value="Divi(/)" onclick="divi()"></td>
+    </tr>
+  </table>
+  <p id="result"></p>
+  <script>
+    function add(){
+      let a = parseInt(document.getElementById('numberA').value);
+      let b = parseInt(document.getElementById('numberB').value);
+      result = "đáp án là: " + (a + b) +"."
+      document.getElementById("result").innerHTML = result
+    }
+    function sub() {
+      let a = parseInt(document.getElementById('numberA').value);
+      let b = parseInt(document.getElementById('numberB').value);
+      result = "đáp án là: " + (a - b) + "."
+      document.getElementById("result").innerHTML = result
+    }
+    function multi() {
+      let a = parseInt(document.getElementById('numberA').value);
+      let b = parseInt(document.getElementById('numberB').value);
+      result = "đáp án là: " + (a * b) + "."
+      document.getElementById("result").innerHTML = result
+    }
+    function divi() {
+      let a = parseInt(document.getElementById('numberA').value);
+      let b = parseInt(document.getElementById('numberB').value);
+      result = "đáp án là: " + (a / b) + "."
+      document.getElementById("result").innerHTML = result
+    }
+  </script>
+</body>
+</html>
