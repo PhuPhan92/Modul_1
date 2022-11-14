@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p><input type="text" value="nhập tháng trong năm"  id="number"> <input type="button" onclick="getDateOfMonth()" value="Tính số ngày"></p>
+  <p id="result"></p>
+  <script>
+    
+    function getDateOfMonth(){
+      let date = parseInt(document.getElementById("number").value);
+      switch(date){
+        case (2): 
+          result = "tháng " + date + " có 28 hoặc 29 ngày.";
+          break;
+        case (1):
+        case (3):
+        case (5):
+        case (7):
+        case (8):
+        case (10):
+        case (12):
+          result = "tháng " + date + " có 31 ngày.";
+          break;
+        default:
+          result = "tháng " + date + " có 30 ngày."
+    }
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+</body>
+</html>
