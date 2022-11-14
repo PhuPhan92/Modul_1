@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="https://cf.shopee.vn/file/d57daf2b2399eaf17fd2353e5e7890fe" alt="khiên captain" id="img" style="width:20%">
+  <p>click me to move the shield to right</p>
+  <input type="button" value="click me" onclick="moveToRght()">
+  <script>
+    let imgPosition = null;
+    imgPosition = document.getElementById('img');
+    function innit() {
+      imgPosition = document.getElementById('img');
+      imgPosition.style.position = 'relative';
+      imgPosition.style.left = '0';    }
+    function moveToRght(){
+      imgPosition.style.left = parseInt(imgPosition.style.left) + 40 +'px';
+    }
+    window.onload = innit;
+  </script>
+</body>
+</html>
