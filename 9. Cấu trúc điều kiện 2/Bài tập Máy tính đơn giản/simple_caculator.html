@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleCaculator</title>
+</head>
+<body>
+  <div>
+    <input type="text" id="input">
+    <table>
+      <tr>
+        <td><button type="button" name="btn" value="1" onclick="input(value)">1</button></td>
+        <td><button type="button" name="btn" value="2" onclick="input(value)">2</button></td>
+        <td><button type="button" name="btn" value="3" onclick="input(value)">3</button></td>
+        <td><button type="button" name="btn" value="+" onclick="input(value)">+</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="btn" value="4" onclick="input(value)">4</button></td>
+        <td><button type="button" name="btn" value="5" onclick="input(value)">5</button></td>
+        <td><button type="button" name="btn" value="6" onclick="input(value)">6</button></td>
+        <td><button type="button" name="btn" value="-" onclick="input(value)">-</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="btn" value="7" onclick="input(value)">7</button></td>
+        <td><button type="button" name="btn" value="8" onclick="input(value)">8</button></td>
+        <td><button type="button" name="btn" value="9" onclick="input(value)">9</button></td>
+        <td><button type="button" name="btn" value="*" onclick="input(value)">*</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" name="del" value="AC" onclick="del()">AC</button></td>
+        <td><button type="button" name="btn" value="0" onclick="input(value)">0</button></td>
+        <td><button type="button" name="result" value="=" onclick="result()">=</button></td>
+        <td><button type="button" name="btn" value="/" onclick="input(value)">/</button></td>
+      </tr>
+    </table>
+    <style>
+      div{
+        width: 172px;
+        border: 5px solid #000;
+      }
+      table{
+        width: 100%;
+        border-collapse: collapse;
+      }
+      button{
+        width: 40px;
+        color: blue;
+      }
+    </style>
+    <script>
+      let view = document.getElementById("input");
+      function input(value) {
+       view.value += value;
+      }
+      function result(){
+        let result = eval(view.value);
+        view.value = result;
+      }
+      function del() {
+        view.value = "";
+      }
+    </script>
+  </div>
+</body>
+</html>
