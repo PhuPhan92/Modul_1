@@ -1,6 +1,8 @@
-let i = 0
-while (i<100 ){
-      if (i % 3 == 0){
-      console.log(i)};
-      i++;
-    }
+let x = 1;
+for (let i = 0; i < -1; 
+i--
+) {
+  console.log(x)
+    x = x + 1;
+}
+console.log(x)
