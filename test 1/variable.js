@@ -1,8 +1,3 @@
-let x = 1;
-for (let i = 0; i < -1; 
-i--
-) {
-  console.log(x)
-    x = x + 1;
-}
-console.log(x)
+let a = 5;
+let result = Math.floor(Math.random * a);
+console.log(Math.random)

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="button" value="Chơi" onclick="chooseGame()">
+  <script>
+    function chooseGame() {
+      let a = parseInt(prompt('Nhập vào khoảng bạn muốn đoán: '));
+      let result = Math.floor(Math.random() * a);
+      document.write(result);
+      for (let i = 0; i < 3; i++) {
+        let c = parseInt(prompt('số bạn đoán là: '));
+        if (c > result) {
+          alert('số bạn chọn lớn hơn')
+        }else if (c < result) {
+          alert('số bạn chọn nhỏ hơn');
+        }else if (c == result) {
+          alert('chúc mừng bạn đã chọn đúng ');
+          break
+        }
+      }
+      {alert('đã hết số lần chon')}
+    }
+  </script>
+</body>
+
+</html>

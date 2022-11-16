@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <Script>
+    let a = 0;
+    let b = 1;
+    let i = 0;
+    let sum = 0;
+    document.write(a + '<br>');
+    document.write(b + '<br>');
+    for (let j = 1; j <= 18; j++) {
+      i = (a + b);
+      document.write(i + '<br>');
+      sum +=i
+      a = b;
+      b = i;
+    }
+    document.write('tổng 20 số fibonacci đầu tiên là: ' + (sum+1) + '<br>')
+  </Script>
+</body>
+
+</html>
