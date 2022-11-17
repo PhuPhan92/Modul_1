@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <input type="text" id="value" >
+    <input type="button" value="Add" onclick="addElementArr()">
+   <input type="button" value="Display" onclick="display()">
+   <div id="result"></div>
+  <script>
+    let x = 0;
+    let arr = [];
+    function addElementArr(){
+      arr[x] = document.getElementById('value').value;
+      alert ('phần tử ' + arr[x] + ' được thêm vào vị trí ' + x);
+      x++;
+      document.getElementById('value').value="";
+    }
+    function display(){
+      let e = "<hr>";
+      for (let i = 0; i < arr.length; i++) {
+        e += "Element " + i + " = " + arr[i] + "<br>";
+      }
+      document.getElementById("result").innerHTML = e;
+    }
+
+    </script>
+</body>
+</html>
