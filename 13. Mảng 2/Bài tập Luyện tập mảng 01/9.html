@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arrA = new Array(10);
+    for (let i = 0; i<arrA.length; i++){
+      arrA[i]=  Math.floor((Math.random() * 100) + 1);}
+    let arrB = new Array(10);
+    for (let i = 0; i<arrB.length; i++){
+      arrB[i]=  Math.floor((Math.random() * 100) + 1);}
+    let arrC = arrA.concat(arrB);
+    document.write('mảng A: ' + arrA + '<br>');
+    document.write('mảng B: ' + arrB + '<br>');
+    document.write('mảng C: ' + arrC);
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arr = new Array(10);
+    for (let i = 0; i<arr.length; i++){
+      arr[i]=  Math.floor((Math.random() * 100) + 1);
+    }
+    let v = parseInt(prompt('đoán 1 số V'))
+    let booleand = true;
+    for (let j = 0;j<10;j++){
+      if(v==arr[j] ) { booleand = true; break;
+    }else { booleand = false}
+    }
+    if (booleand) { alert ('V is in the array')}else {alert ('V is not in the array')}
+    document.write(arr);
+  </script>
+</body>
+</html>

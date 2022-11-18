@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary</title>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Simple Dictionary</h2>
+    <input type="text" id="find">
+    <input type="button" value="Dịch" onclick="tranf()">
+    <p id="result"></p>
+    <script>
+      let eng = ['apple','banana'];
+      let viet = ['táo', 'chuối'];
+      function tranf(){
+        let i = eng.findIndex(checkString);
+        function checkString(eng){
+          let find = document.getElementById('find').value;
+          return eng === find;
+        }
+        document.getElementById('result').innerHTML = viet[i];
+
+      }
+    </script>
+  </body>
+  </html>
+</body>
+</html>
