@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let stringA = prompt(' nhập chuỗi A');
+    let stringB = prompt(' nhập chuỗi B');
+    let arrA = stringA.split('');
+    let arrB = stringB.split('');
+    if (arrA.length !== arrB.length){
+      alert('2 chuỗi không giống nhau')
+    }else {
+      var result = null;
+      for (let i = 0; i<arrA.length; i++){
+        if (arrA[i] != arrB[i]){result = false; break}else {result = true}}
+      if(result){alert('2 chuỗi giống nhau')}else {alert('2 chuỗi không giống nhau')};
+      }
+    
+  
+
+
+
+  </script>
+</body>
+</html>
