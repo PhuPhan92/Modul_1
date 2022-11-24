@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 5px;
+}
+
+.display-3 {
+  font-weight: bolder;
+  margin: 10px 0px;
+}
+
+.form-group {
+  width: 60%;
+  background-color: lightgray;
+  display: flex;
+  padding: 20px 10px;
+  border-radius: 7px;
+  justify-content: space-between;
+}
+
+.form-control {
+  border: none;
+  outline: none;
+  padding: 7px 5px;
+  flex-grow: 1;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+
+.edit-form-control {
+  padding: 5px 10px;
+  border-radius: 7px;
+  width: 70%;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+  border-color: darkgreen;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: darkgreen;
+}
+
+.btn-warning {
+  background-color: orange;
+  color: white;
+  border-color: darkorange;
+  cursor: pointer;
+}
+
+.btn-warning:hover {
+  background-color: darkorange;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+  border-color: darkred;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: darkred;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.thead-dark {
+  background-color: #333;
+  color: white;
+}
+
+.thead-dark th {
+  padding: 10px;
+}
+
+.table td {
+  padding: 5px;
+}
+
+.table>tbody>tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="1368px" height="768px" style="border:1px soild #d3d3d3"></canvas>
+  <script>
+    function Retagle(width, height){
+      this.width = width;
+      this.height = height;
+      this.getWidth = function(){
+        return this.width;
+      }
+      this.getHeight = function(){
+        return this.height;
+      }
+      this.getPerimeter = function () {
+        return (width + height) * 2;
+      }
+      this.getArea = function () {
+        return width * height;
+      }
+      
+    }
+    let reg = new Retagle(200,100);
+    let width = reg.getWidth();
+    let height = reg.getHeight();
+    let per = reg.getPerimeter();
+    let area = reg.getArea();
+    alert("perimeter: " + per + "; area: " + area);
+    function createReg(){
+        var ctx = document.getElementById('myCanvas').getContext('2d');
+        ctx.fillRect (50,50,width, height);
+      }
+      createReg();
+    
+  </script>
+</body>
+</html>

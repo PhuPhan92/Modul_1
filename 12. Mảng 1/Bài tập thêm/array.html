@@ -16,9 +16,11 @@
       for (let i = 0; i<length;i++ ){
         arr[i] = Math.floor(Math.random() * (71) + 20);
       }
+      let result = '';
       for(let i = 0; i<length; i++){
-        document.getElementById('result').value= arr[i] + '&#10;';
+        result+=`${arr[i]}\n`
       }
+      document.getElementById('result').value=result;
     }
   </script>
 </body>

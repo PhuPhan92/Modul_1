@@ -27,7 +27,7 @@
         let i = eng.findIndex(checkString);
         function checkString(eng){
           let find = document.getElementById('find').value;
-          return eng === find;
+          return eng.toLowerCase() === find.toLowerCase().trim();
         }
         document.getElementById('result').innerHTML = viet[i];
 
