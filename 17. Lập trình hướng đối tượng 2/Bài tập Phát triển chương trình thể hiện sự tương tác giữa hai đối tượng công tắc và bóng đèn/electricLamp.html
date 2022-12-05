@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // class ElectricLamp {
+    //   constructor(status){
+    //     this.status = status;
+    //   }
+    //   getStatus(){
+    //     return this.status;
+    //   }
+    // }
+    // class SwitchButton{
+    //   constructor(lamp, status){
+    //     this.lamp = lamp;
+    //     this.status = status
+    //   }
+    //   getLamp(){
+    //     return this.lamp;
+    //   }
+    //   setLamp(lamp){
+    //     this.lamp = lamp;
+    //   }
+    //   connectToLamp(ElectricLamp){
+    //     return this.lamp = ElectricLamp;
+    //   }
+    //   switchOn(){  
+    //     this.lamp.status = true;
+    //     return this.status = true;
+    //   }
+    //   switchOff(){
+    //     this.lamp.status = false;
+    //     return this.status = false;
+    //   }
+    // }
+    // let electricLamp_1 = new ElectricLamp(flase);
+    // let switchButton_1 = new SwitchButton(electricLamp_1, false);
+
+    class ElectricLamp {
+      constructor(status) {
+        this.status = status;
+      }
+      getStatus() {
+        return this.status;
+      }
+      alertStatus(status){
+        if (status) {
+          alert('đèn sáng')
+        }else {
+          alert('đèn tắt')
+        };
+      }
+    }
+
+    class SwitchButton {
+      constructor(lamp, status) {
+        this.status = status;
+        this.lamp = lamp;
+      }
+      getLamp() {
+        return this.lamp;
+      }
+
+      setLamp(lamp) {
+        this.lamp = lamp;
+      }
+
+      connectToLamp(Electriclamp) {
+        return this.lamp = Electriclamp;
+      }
+
+      switchOff() {
+        this.lamp.status = false;
+        alert('công tắc đóng')
+        return this.status = false;
+      }
+
+      switchOn() {
+        this.lamp.status = true;
+        alert('công tắc bật')
+        return this.status = true;
+      }
+    }
+
+
+    let electricLamp_1 = new ElectricLamp(false);
+
+    let switchButton_1 = new SwitchButton(electricLamp_1, false);
+
+    // for (let i = 0; i < 3; i++) {
+      switchButton_1.switchOn();
+      electricLamp_1.getStatus();
+      electricLamp_1.alertStatus();
+      switchButton_1.switchOff();
+      electricLamp_1.getStatus();
+      electricLamp_1.alertStatus();
+    
+  </script>
+</body>
+
+</html>
